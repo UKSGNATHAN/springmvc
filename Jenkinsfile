@@ -12,7 +12,7 @@ pipeline{
         }
         stage ('tomcat deploy'){
             steps{
-                tomcatdeploy credId: 'tomcatserver',
+                tomcatdeploy credId: 'tomcatsharedlib',
                              ip: '172.31.40.104',
                              userName: 'ec2-user',
                              tomcatHome: '/opt/tomcat8',
